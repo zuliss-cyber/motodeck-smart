@@ -15,6 +15,15 @@ The signed APK is published on the [latest GitHub release](https://github.com/zu
 Download `MotoDeck-smart-<version>.apk`, open it on the phone and allow installation from
 your browser or file manager. Android 8.0 (API 26) or newer is required.
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/01-dashboard-portrait.png" width="300" alt="MotoDeck dashboard in portrait">
+  <img src="docs/screenshots/02-dashboard-landscape.png" width="520" alt="MotoDeck riding layout in landscape">
+</p>
+
+Left: portrait dashboard on a phone. Right: compact two-column riding layout in landscape.
+
 ## Features
 
 - **Icy HUD cockpit dashboard** — deep teal-black surfaces, icy blue accent palette,
@@ -218,3 +227,7 @@ The unit tests cover speed/distance/clock formatting, compass headings and weath
 mapping. Runtime behaviour (GPS reception, media sessions, weather replies and maps
 availability) depends on the device, installed apps, network and location permissions and
 must be checked on the target phone.
+
+## License
+
+Released under the [MIT License](LICENSE).
