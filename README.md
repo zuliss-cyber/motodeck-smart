@@ -9,6 +9,12 @@ cockpit wallpaper and a customisable app dock.
 > sensor or certified speedometer reading and must never replace the motorcycle's
 > instruments or the rider's judgement.
 
+## Download
+
+The signed APK is published on the [latest GitHub release](https://github.com/zuliss-cyber/motodeck-smart/releases/latest).
+Download `MotoDeck-smart-<version>.apk`, open it on the phone and allow installation from
+your browser or file manager. Android 8.0 (API 26) or newer is required.
+
 ## Features
 
 - **Icy HUD cockpit dashboard** — deep teal-black surfaces, icy blue accent palette,
