@@ -11,9 +11,15 @@ cockpit wallpaper and a customisable app dock.
 
 ## Download
 
-The signed APK is published on the [latest GitHub release](https://github.com/zuliss-cyber/motodeck-smart/releases/latest).
-Download `MotoDeck-smart-<version>.apk`, open it on the phone and allow installation from
-your browser or file manager. Android 8.0 (API 26) or newer is required.
+**Permanent link — always the newest build:**
+
+```
+https://github.com/zuliss-cyber/motodeck-smart/releases/latest/download/MotoDeck-smart.apk
+```
+
+Or browse the [latest release page](https://github.com/zuliss-cyber/motodeck-smart/releases/latest)
+for the version notes. Open the APK on the phone and allow installation from your browser
+or file manager. Android 8.0 (API 26) or newer is required.
 
 ## Screenshots
 

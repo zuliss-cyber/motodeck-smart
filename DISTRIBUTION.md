@@ -98,16 +98,23 @@ git push -u origin main
 2. **Choose a tag** → type `v1.1.0` → **Create new tag on publish**.
 3. Release title: `MotoDeck//smart 1.1.0`.
 4. Paste the release notes (features, changes, known limitations — see the template below).
-5. Drag `app-release.apk` into the **Attach binaries** box.
-6. Optional: rename the asset to `MotoDeck-smart-1.1.0.apk` after upload for a cleaner
-   download filename.
-7. Click **Publish release**.
+5. Rename the built file to **`MotoDeck-smart.apk`** and drag it into the **Attach binaries**
+   box. Keep this exact name for every release — see the permanent link below.
+6. Click **Publish release**.
 
-The public download link becomes:
+The human-friendly page is:
 
 ```
 https://github.com/<YOUR-USERNAME>/motodeck-smart/releases/latest
 ```
+
+Because the asset name never changes, this direct link always downloads the newest build:
+
+```
+https://github.com/<YOUR-USERNAME>/motodeck-smart/releases/latest/download/MotoDeck-smart.apk
+```
+
+Share that second link on WhatsApp, forums or a QR code — it never needs updating.
 
 ---
 
@@ -120,9 +127,12 @@ Icy HUD cockpit theme, in-app cockpit wallpaper, GPS dashboard for motorcycle ri
 A real Android home-screen replacement — not a widget or a mockup.
 
 ### Install
-1. Download `MotoDeck-smart-1.1.0.apk` below.
+1. Download `MotoDeck-smart.apk` below.
 2. Open the file and allow "Install unknown apps" for your browser or file manager.
 3. Open MotoDeck//smart and accept the home-screen prompt.
+
+Permanent link (always the newest build):
+`https://github.com/<YOUR-USERNAME>/motodeck-smart/releases/latest/download/MotoDeck-smart.apk`
 
 **SHA-256:** `<paste hash here>`
 
@@ -146,7 +156,15 @@ A real Android home-screen replacement — not a widget or a mockup.
    `versionCode` **must** increase every release.
 2. Build `:app:assembleRelease` again with the **same** `release.jks`.
 3. Commit and push the source change.
-4. Create a new release with a new tag (`v1.1.1`, `v1.2.0`, …) and attach the new APK.
+4. Create a new release with a new tag (`v1.1.1`, `v1.2.0`, …) and attach the new APK,
+   still named `MotoDeck-smart.apk`.
+
+Copy the APK to `MotoDeck-smart.apk` before uploading, then publish from the command line:
+
+```powershell
+Copy-Item "app\build\outputs\apk\release\app-release.apk" "MotoDeck-smart.apk"
+gh release create v1.1.1 "MotoDeck-smart.apk" --title "MotoDeck//smart 1.1.1" --notes-file notes.md --latest
+```
 
 Users who already installed the app can install the new APK over the old one, because both
 are signed with the same key and share the application id `com.motosmart.launcher`.
