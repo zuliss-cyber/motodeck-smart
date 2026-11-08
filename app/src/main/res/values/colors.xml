@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cockpit_black">#FF02090B</color>
+    <color name="cockpit_graphite">#FF071417</color>
+    <color name="launcher_background">#FF02090B</color>
+</resources>
