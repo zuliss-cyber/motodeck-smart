@@ -52,8 +52,11 @@ android {
             versionNameSuffix = "-debug"
         }
         release {
-            isMinifyEnabled = true
-            isShrinkResources = true
+            // Kept off so the signed APK can be rebuilt reliably on modest hardware.
+            // Turn both on again before a Play Store upload; R8 then adds several
+            // minutes to every clean build.
+            isMinifyEnabled = false
+            isShrinkResources = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
